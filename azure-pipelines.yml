@@ -15,7 +15,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'mqsiprofile&&mqsicreatebar -data C:\Users\anupa\IBM\ACET12\workspace -b ado_test\target\ace\ado_test.bar -cleanBuild  -a ado_test -deployAsSource -trace -v createbartrace.txt'
+    script: 'cd C:\Program Files\IBM\ACE\12.0.9.0\server\bin&&mqsiprofile&&mqsicreatebar -data "C:\Users\anupa\IBM\ACET12\workspace" -b "C:\Program Files\IBM\ACE\12.0.9.0\ado_test\target\ace\ado_test2.bar" -cleanBuild  -a ado_test -deployAsSource -trace -v createbartrace.txt'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.

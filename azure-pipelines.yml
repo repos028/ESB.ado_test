@@ -13,6 +13,10 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: CmdLine@2
+  inputs:
+    script: 'mqsiprofile&&mqsicreatebar -data C:\Users\anupa\IBM\ACET12\workspace -b ado_test\target\ace\ado_test.bar -cleanBuild  -a ado_test -deployAsSource -trace -v createbartrace.txt'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
